@@ -12,9 +12,26 @@
     padding: 0;
     background-color: black;
 }
-.navigation li{
-  padding: 70px;
-  display: inline;
+@media all and (min-width: 1000px)
+{
+  .navigation li{
+    padding: 70px;
+    display: inline;
+  } 
+}
+@media all and (max-width:999px) and (min-width:750px)
+{
+  .navigation li{
+    padding: 40px;
+    display: inline;
+  }  
+}
+@media all and (max-width:749px) and (min-width:600px)
+{
+  .navigation li{
+    padding: 10px;
+    display: inline;
+  }  
 }
 .navigation li a{
   color: white;
