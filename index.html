@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Current affairs</h1>
+</div>
+<div class="navigation">
+<ul>
+  <li><a href="#cur">Current affairs</a></li>
+  <li><a href="#history">Todays History</a></li>
+  <li><a href="#news">Hindu News</a></li>
+  <li><a href="#vocabulary">Vocabulary</a></li>
+  <li><a href="#analysis">Hindu Analysis</a></li>
+</ul>
+</div>
+<div class="row">
+  <div class="col-2 col-s-3 menu">
+    <ul>
+      <li>Practice</li>
+      <li>Mock Test</li>
+      <li>Mega Test</li>
+      <li>Daily Quiz</li>
+      <li>Current affairs</li>
+      <li>Get app</li>
+      <li>Register</li>
+      <li>Login</li>
+    </ul>
+  </div>
+
+  <div class="col-8 col-s-9">
+    <p class="current">NITI Ayoga Releases 'Mobile Electric Financing in India' Report</p>
+    <p class="current">Narendra Modi inaugarated 'Maitri Setu' Virtually between India and Bangladesh Over Feni River</p>
+  </div>
+
+  <div class="col-2 col-s-12">
+    <div class="aside">
+      <h2>Dates</h2>
+      <p id="a"></p>
+      <p id="b"></p>
+      <p id="c"></p>
+      <p id="d"></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>@Copyright 2020 Apna Study</p>
+</div>
+<script type="text/javascript">
+  var d=new Date();
+  d.setDate(d.getDate() - 1); 
+  document.getElementById("a").innerHTML = d.getDate()+"/"+ (d.getMonth()+1)+"/"+d.getFullYear();
+  d.setDate(d.getDate() - 1); 
+  document.getElementById("b").innerHTML = d.getDate()+"/"+ (d.getMonth()+1)+"/"+d.getFullYear();
+  d.setDate(d.getDate() - 1); 
+  document.getElementById("c").innerHTML = d.getDate()+"/"+ (d.getMonth()+1)+"/"+d.getFullYear();
+  d.setDate(d.getDate() - 1); 
+  document.getElementById("d").innerHTML = d.getDate()+"/"+ (d.getMonth()+1)+"/"+d.getFullYear();
+</script>
+</body>
+</html>
